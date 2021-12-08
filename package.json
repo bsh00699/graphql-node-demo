@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node index.js",
-    "build": "npm run babel . -d build --ignore node_modules --minified",
+    "build": "babel . -d build --ignore node_modules --minified",
     "start": "node build"
   },
   "keywords": [],
@@ -24,6 +24,7 @@
     "graphql": "^16.0.1",
     "graphql-tools": "^8.2.0",
     "koa": "^2.13.4",
+    "koa-graphql": "^0.12.0",
     "koa-router": "^10.1.1",
     "nanoid": "^3.1.30"
   }
