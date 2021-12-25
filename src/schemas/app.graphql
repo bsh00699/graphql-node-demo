@@ -1,0 +1,13 @@
+type App {
+  id: ID!
+  name: String
+  status: String
+}
+
+type Query {
+  app: App
+}
+
+type Mutation {
+  createApp(name: String!): App
+}
